@@ -7,11 +7,7 @@
   "author": "Narrativa Studios",
   "description": "A catclicker game!",
   "scripts": {
-    "dev": "vite",
-    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
-    "build": "vite build",
-    "electron:build": "npm run build && electron-builder",
-    "preview": "vite preview"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.1",
